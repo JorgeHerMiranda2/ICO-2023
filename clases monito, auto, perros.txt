@@ -1,0 +1,86 @@
+public class Monitor {
+    
+    private double pulgadas;
+    
+    private String color;
+    
+    private String modelo;
+    
+    private double precio;
+    
+     public Monitor (double pulgadas, String color, String modelo, double precio) {
+        this.pulgadas = pulgadas;
+        this.color = color;
+        this.modelo = modelo;
+        this.precio= precio;
+        
+    
+     }
+    
+}
+
+////////////////////////////////////////////////////////
+
+public class Automovil {
+    
+    private String marca;
+    
+    private byte modelo;
+    
+    private Color color;
+    
+public void Marca (String m) {
+    ArrayList<String> marcas = new ArreyList<>();
+    
+    marcas.add ("VMW");
+    marcas.add ("honda");
+    marcas.add ("nisan");
+    marcas.add ("toyota");
+    
+    if (marcas.contains(m.toUpperCase())){
+        this.marca = m;
+    } else {
+        System.out.println ("Esa marca no existe");
+    }
+}    
+      
+}
+
+////////////////////////////////////////////////////////////
+
+
+public class Perro {
+
+  private String nombre;
+  private int edad;
+
+  
+  public Perro(String nombre, int edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
+
+  
+  public Perro(){};
+
+  public String toString() {
+    return ("Nombre: " + getNombre() + " Edad: " + getEdad() + "años");
+  }
+
+  public String getNombre() {
+    return (this.nombre);
+  }
+
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
+  }
+
+  public int getEdad() {
+    return (this.edad);
+  }
+
+  public void setEdad(int edad) {
+    this.edad = edad;
+  }
+
+}
