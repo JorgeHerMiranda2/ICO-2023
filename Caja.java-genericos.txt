@@ -1,0 +1,31 @@
+package org.example;
+
+public class Caja <T> {
+    public static final int CAPACIDAD = 10;:
+
+    private T[] content;
+
+    public Caja() {
+    }
+
+    public Caja(T[] content) {
+        this.content = content;
+    }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Caja{" +
+                "content=" + java.util.Arrays.toString(content) +
+                '}';
+    }
+
+    public void add (int pos, T objeto){
+        content[pos]= objeto;
+    }
+
+    public T get(int pos){
+        return content[pos];
+    }
+
+
+}
